@@ -64,7 +64,7 @@ for i, d in enumerate(data_copy):
             del activities[i][k]
 
 # 7. Step 5: Save the data to a JSON file
-with open('strava_activities.json', 'w') as f:
+with open('strava_data/strava_activities.json', 'w') as f:
     json.dump(activities, f, indent=4)
 
 print("Strava activities saved to strava_activities.json")

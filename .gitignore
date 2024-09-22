@@ -1,6 +1,5 @@
 .chainlit/
 data_index/
-data/
 .strava_activies.json
 
 # Byte-compiled / optimized / DLL files
