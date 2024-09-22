@@ -56,7 +56,8 @@ activities = response.json()
 
 # 6. Filter json
 save_keys = ['name', 'distance', 'moving_time', 'elasped_time', 'start_date', 'total_elevation_gain', 'start_date_local',
-             'average_speed', 'max_speed', 'average_heartrate', 'max_heartrate', 'elev_high', 'elev_low', 'suffer_score']
+             'average_speed', 'max_speed', 'average_heartrate', 'max_heartrate', 'elev_high', 'elev_low', 'suffer_score',
+             'type', 'sport_type']
 data_copy = copy.deepcopy(activities)
 for i, d in enumerate(data_copy):
     for k in d.keys():
