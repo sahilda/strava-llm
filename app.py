@@ -99,8 +99,6 @@ async def on_message(message: cl.Message):
         if token := part.choices[0].delta.content or "":
             await response_message.stream_token(token)
 
-    await response_message.update()
-
     # Record the AI's response in the history
     message_history.append({"role": "assistant", "content": response_message.content})
     cl.user_session.set("message_history", message_history)
